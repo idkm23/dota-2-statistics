@@ -39,7 +39,6 @@ $result = $db->query('SELECT skypename FROM Accounts WHERE id=1');
         
         <!-- First Row -->
         <div id="row1">
-            
             <!-- Friend Session -->
             <div id="friend-container" class = "container">
                 <div class="info">
@@ -99,7 +98,6 @@ $result = $db->query('SELECT skypename FROM Accounts WHERE id=1');
             <!-- End Activity Session -->
         </div>    
         <!-- End Second Row -->
-        
         <div id="logo-wrapper">
             <div id="logo-container" class = "container">
                 <div class="logo-info">
@@ -112,7 +110,6 @@ $result = $db->query('SELECT skypename FROM Accounts WHERE id=1');
                 </div>
             </div>
         </div>
-    
     </div>
     <!-- end wrapper session -->
     
