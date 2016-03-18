@@ -35,10 +35,13 @@ $result = $db->query('SELECT skypename FROM Accounts WHERE id=1');
 <body>
     <link href='http://fonts.googleapis.com/css?family=Raleway:500,400,300,200,100' rel='stylesheet' type='text/css'>
     <!-- Body Wrapper-->
-    <div id="wrapper">
-        <!-- Friend Session -->
-        <div id="wrapper">
-            <div id="friend-container">
+    <div id="big-wrap">
+        
+        <!-- First Row -->
+        <div id="row1">
+            
+            <!-- Friend Session -->
+            <div id="friend-container" class = "container">
                 <div class="info">
                     <div class="name">
                         <a href="#"> Hung Nguyen </a>
@@ -48,13 +51,11 @@ $result = $db->query('SELECT skypename FROM Accounts WHERE id=1');
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- End Friend Session -->
+            <!-- End Friend Session -->
         
-        <!-- Activity Session -->
-        <div id="wrapper">
-            <div id="act-container">
-                <div class="act-info">
+            <!-- Activity Session -->
+            <div id="act-container" class = "container">
+                <div class="info">
                     <div class="name">
                         <a href="#"> Hung Nguyen </a>
                     </div>
@@ -63,13 +64,15 @@ $result = $db->query('SELECT skypename FROM Accounts WHERE id=1');
                     </div>
                 </div>
             </div>
+            <!-- End Activity Session -->
         </div>
-        <!-- End Activity Session -->
+        <!-- End First Row -->
         
-        <!-- About Me -- Records-->
-        <div id="wrapper">
-            <div id="me-container">
-                <div class="me-info">
+        <!-- Second Row -->
+        <div id="row2">
+            <!-- About Me -- Records-->
+            <div id="me-container" class = "container">
+                <div class="info">
                     <div class="name">
                         <a href="#"> Hung Nguyen </a>
                     </div>
@@ -78,15 +81,30 @@ $result = $db->query('SELECT skypename FROM Accounts WHERE id=1');
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- End About Me session -->
-        
-        <!-- Graph Session -->
-        <div id="wrapper">
+            <!-- End About Me session -->
+           
+            <!-- Graph Session -->
             <div id="graph-container">
-                <div class="graph-infor">
+                <div id="graph-container" class = "container">
+                    <div class="info">
+                        <div class="name">
+                            <a href="#"> Hung Nguyen </a>
+                        </div>
+                        <div class="location">
+                            <a href="#"> Lowell </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Activity Session -->
+        </div>    
+        <!-- End Second Row -->
+        
+        <div id="logo-wrapper">
+            <div id="logo-container" class = "container">
+                <div class="logo-info">
                     <div class="name">
-                        <a href="#"> Hung Nguyen </a>
+                        <a href="#"> <?php echo $result->fetchArray()["skypename"]; ?> </a>
                     </div>
                     <div class="location">
                         <a href="#"> Lowell </a>
@@ -94,23 +112,11 @@ $result = $db->query('SELECT skypename FROM Accounts WHERE id=1');
                 </div>
             </div>
         </div>
-        <!-- End Activity Session -->
-        
+    
     </div>
     <!-- end wrapper session -->
     
-    <div id="logo-wrapper">
-        <div id="logo-container">
-            <div class="logo-info">
-                <div class="name">
-                    <a href="#"> <?php echo $result->fetchArray()["skypename"]; ?> </a>
-                </div>
-                <div class="location">
-                    <a href="#"> Lowell </a>
-                </div>
-            </div>
-        </div>
-    </div>
+    
     
 </body>
 </html>
