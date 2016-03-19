@@ -29,14 +29,14 @@ $result = $db->query('SELECT skypename FROM Accounts WHERE id=1');
     <script src="http://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
     
     <link rel="stylesheet" href="http://coletownsend.com/web/content/fonts/Entypo/Entypo/entypo.css" media="all">
-	
-    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
     <link href='http://fonts.googleapis.com/css?family=Raleway:500,400,300,200,100' rel='stylesheet' type='text/css'>
-    <!-- Body Wrapper-->
+    <!-- Add Canvas -->
+    <canvas class="can-container" id="can-container" role="main"></canvas>
+
     <div id="big-wrap">
-        
         <!-- First Row -->
         <div id="row1">
             <!-- Friend Session -->
@@ -113,7 +113,10 @@ $result = $db->query('SELECT skypename FROM Accounts WHERE id=1');
     </div>
     <!-- end wrapper session -->
     
+    <div class="ball top"><canvas class="canvas" id="topBalls"></canvas></div>
+    <div class="ball bottom"><canvas width="100%" height="100%" class="canvas" id="bottomBalls"></canvas></div>
+    <!-- Body Wrapper-->
     
-    
+    <script language="JavaScript" type="text/javascript" src="script/script.js"></script>
 </body>
 </html>
